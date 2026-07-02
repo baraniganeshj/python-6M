@@ -9,6 +9,7 @@ remaining_tickets = assigned_tickets - tickets_closed
 
 print(f"Shift Summary for {name}")
 print(f"Hours Worked: {hours_worked}")
+print(f"Assigned Tickets: {assigned_tickets}")
 print(f"Tickets Closed: {tickets_closed}")
 print(f"Remaining Tickets: {remaining_tickets}")
 print(f"Average Tickets Per Hour: {average_tickets}")
