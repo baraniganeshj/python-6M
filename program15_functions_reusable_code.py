@@ -25,3 +25,7 @@ switch_1 = get_device_message("Switch-1")
 
 print(router_1)
 print(switch_1)
+
+print()
+
+
