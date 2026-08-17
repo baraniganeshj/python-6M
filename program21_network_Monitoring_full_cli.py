@@ -18,7 +18,7 @@ def analyze_network(devices, statuses, cpu_usage, memory_usage, uptime_percentag
             devices_down += 1
         if cpu_usage[i] > 90:
             critical_cpu_count += 1
-        if memory_usage[i] > 80:
+        if memory_usage[i] > 85:
             critical_memory_count += 1
     return total_devices, devices_down, critical_cpu_count, critical_memory_count, average_cpu_usage, average_memory_usage, average_uptime
 
@@ -49,14 +49,14 @@ for i in range(len(devices)):
         f"Uptime: {uptime_percentages[i]}%"
     )
 print("="*50)
-print("NETWORK ANALYSIS;")
+print("NETWORK ANALYSIS:")
 print(f"Total Devices: {total_devices}")
 print(f"Devices Down: {devices_down}")
 print(f"Devices with Critical CPU Usage: {critical_cpu_count}")
 print(f"Devices with Critical Memory Usage: {critical_memory_count}")
 print(f"Average CPU Usage: {average_cpu_usage}%")
 print(f"Average Memory Usage: {average_memory_usage}%")
-print()
+print(f"Average Uptime: {average_uptime:.2f}%")
 print("="*50)
 print("ALERTS:")
 
