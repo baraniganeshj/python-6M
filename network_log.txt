@@ -1,0 +1,4 @@
+2026-07-22 Router-1 UP
+2026-07-22 Switch-1 DOWN
+2026-07-22 Firewall-1 UP
+2026-07-22 Server-1 DOWN
